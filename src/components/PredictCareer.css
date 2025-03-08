@@ -1,0 +1,242 @@
+/* src/components/PredictCareer.css */
+.predict-career {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+/* Light Mode (Default) */
+.light-mode {
+  background-color: #f4f4f9;
+  color: #000000;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #61dafb; /* Logo color */
+}
+
+.nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #61dafb; /* Highlight color on hover */
+}
+
+.theme-toggle {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #21a1f1;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Limit width for better readability */
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1; /* Ensure main content takes up remaining space */
+}
+
+.main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: inherit; /* Inherits from light/dark mode */
+}
+
+.main p {
+  font-size: 18px;
+  color: inherit; /* Inherits from light/dark mode */
+  margin-bottom: 30px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between input fields */
+  width: 100%;
+  max-width: 400px; /* Limit width for better alignment */
+}
+
+.input-fields input,
+.input-fields select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: inherit; /* Inherits from light/dark mode */
+  color: inherit; /* Inherits from light/dark mode */
+}
+
+/* Style for dropdown options in dark mode */
+.dark-mode .input-fields select option {
+  background-color: #1a1a1a; /* Dark background for options */
+  color: #ffffff; /* White text for options */
+}
+
+.input-fields button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.input-fields button:hover {
+  background-color: #21a1f1;
+}
+
+.input-fields button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #61dafb;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 28px;
+  }
+
+  .main p {
+    font-size: 16px;
+  }
+
+  .input-fields input,
+  .input-fields select {
+    font-size: 14px;
+  }
+
+  .input-fields button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 24px;
+  }
+
+  .main p {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: inherit;
+  color: inherit;
+}
+
+.input-group select {
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.error {
+  color: #ff4d4d; /* Red color for errors */
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}

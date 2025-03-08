@@ -1,0 +1,129 @@
+/* src/components/LandingPage.css */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+/* Light Mode (Default) */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #61dafb; /* Logo color */
+}
+
+.nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #61dafb; /* Highlight color on hover */
+}
+
+.theme-toggle {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #21a1f1;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: inherit; /* Inherits from light/dark mode */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: inherit; /* Inherits from light/dark mode */
+}
+
+.hero button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #21a1f1;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #61dafb; /* Highlight color on hover */
+}
