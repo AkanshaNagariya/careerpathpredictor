@@ -1,6 +1,6 @@
 // src/components/LandingPage.js
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext"; // Use theme context
 import "./LandingPage.css";
 
@@ -41,9 +41,10 @@ const LandingPage = () => {
           <a href="/about">About</a>
           <a href="/faq">FAQ</a>
           <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy Policy</a>
+          {/* <a href="/Privacy">Privacy Policy</a> */}
+          <Link to={`/Privacy`}>Privacy Policy</Link>
         </div>
-        <p className="copyright">&copy; 2023 CareerPathAI. All rights reserved.</p>
+        <p className="copyright">&copy; 2025 CareerPathAI. All rights reserved.</p>
       </footer>
     </div>
   );

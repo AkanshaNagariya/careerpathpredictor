@@ -9,6 +9,7 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import CareerResults from "./components/CareerResults";
 import RoadmapPage from "./components/RoadmapPage"; // Import the new component
+import Privacy from "./components/Privacy";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/roadmap" element={<RoadmapPage />} /> {/* Add this route */}
           <Route path="/career-results" element={<CareerResults />} />
+          <Route path="/Privacy" element={<Privacy/>} />
         </Routes>
       </Router>
     </ThemeProvider>

@@ -38,7 +38,7 @@ const PredictCareer = () => {
     setIsLoading(true);
 
     try {
-      const prompt = `Suggest **at least 10 career paths** for someone with skills in ${skills}, interests in ${interests}, and experience level ${experience}. 
+      const prompt = `Suggest **at least 9 career paths** for someone with skills in ${skills}, interests in ${interests}, and experience level ${experience}. 
       Format the output exactly like this (one career per block):
       
       - Job title: [Job Title]
@@ -151,9 +151,9 @@ const PredictCareer = () => {
           <a href="/about">About</a>
           <a href="/faq">FAQ</a>
           <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/Privacy">Privacy Policy</a>
         </div>
-        <p className="copyright">&copy; 2023 CareerPathAI. All rights reserved.</p>
+        <p className="copyright">&copy; 2025 CareerPathAI. All rights reserved.</p>
       </footer>
     </div>
   );

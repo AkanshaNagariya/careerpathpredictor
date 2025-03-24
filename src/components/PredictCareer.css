@@ -165,50 +165,6 @@
   color: #61dafb;
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 768px) {
-  .main h1 {
-    font-size: 28px;
-  }
-
-  .main p {
-    font-size: 16px;
-  }
-
-  .input-fields input,
-  .input-fields select {
-    font-size: 14px;
-  }
-
-  .input-fields button {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .main h1 {
-    font-size: 24px;
-  }
-
-  .main p {
-    font-size: 14px;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .nav {
-    margin-top: 10px;
-  }
-
-  .nav a {
-    margin: 0 10px;
-  }
-}
-
 .input-group {
   width: 100%;
   margin-bottom: 15px;
@@ -239,4 +195,102 @@
   font-size: 14px;
   margin-top: 5px;
   display: block;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .main h1 {
+    font-size: 28px;
+  }
+
+  .main p {
+    font-size: 16px;
+  }
+
+  .input-fields input,
+  .input-fields select {
+    font-size: 14px;
+  }
+
+  .input-fields button {
+    font-size: 14px;
+  padding: 8px 16px;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 14px;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .theme-toggle {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .main h1 {
+    font-size: 24px;
+  }
+
+  .main p {
+    font-size: 14px;
+  }
+
+  .input-fields {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .input-fields input,
+  .input-fields select {
+    font-size: 12px;
+  }
+
+  .input-fields button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 12px;
+  padding: 8px;
+  background-size: 10px; /* Smaller dropdown arrow */
+  background-position: right 8px center;
+  }
+
+  .error {
+    font-size: 10px;
+  }
 }

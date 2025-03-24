@@ -127,3 +127,78 @@
 .footer-links a:hover {
   color: #61dafb; /* Highlight color on hover */
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .theme-toggle {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-links a {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}

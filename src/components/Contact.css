@@ -169,3 +169,114 @@
   font-size: 14px;
   color: #aaa;
 }
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .main {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .main h1 {
+    font-size: 28px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .thank-you-message h2 {
+    font-size: 20px;
+  }
+
+  .thank-you-message p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .theme-toggle {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .main h1 {
+    font-size: 24px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .form-group textarea {
+    height: 120px;
+  }
+
+  .submit-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .thank-you-message h2 {
+    font-size: 18px;
+  }
+
+  .thank-you-message p {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}

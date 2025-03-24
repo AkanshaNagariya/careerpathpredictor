@@ -87,9 +87,9 @@ const Contact = () => {
           <a href="/about">About</a>
           <a href="/faq">FAQ</a>
           <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/Privacy">Privacy Policy</a>
         </div>
-        <p className="copyright">&copy; 2023 CareerPathAI. All rights reserved.</p>
+        <p className="copyright">&copy; 2025 CareerPathAI. All rights reserved.</p>
       </footer>
     </div>
   );

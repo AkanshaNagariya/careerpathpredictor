@@ -182,6 +182,52 @@
   color: #61dafb; /* Highlight color on hover */
 }
 
+/* Heading Container */
+.heading-container {
+  display: flex;
+  align-items: center; /* Vertically center the button and heading */
+  justify-content: center; /* Center the heading */
+  position: relative; /* For absolute positioning of the back button */
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Back Button Styles */
+.back-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  position: absolute; /* Position the button absolutely */
+  left: 50px; /* Align to the leftmost side */
+}
+
+.back-button:hover {
+  background-color: #21a1f1;
+}
+
+/* Dark Mode Back Button */
+.dark-mode .back-button {
+  background-color: #61dafb;
+  color: #000000;
+}
+
+.dark-mode .back-button:hover {
+  background-color: #21a1f1;
+}
+
+/* Career Recommendation Heading */
+.career-recommendation-heading {
+  text-align: center; /* Center the heading */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Full width */
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .career-grid {
@@ -212,6 +258,17 @@
 
   .career-card button {
     font-size: 14px;
+  }
+
+  .heading-container {
+    flex-direction: column; /* Stack heading and button vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .back-button {
+    position: static; /* Reset absolute positioning */
+    margin-bottom: 10px; /* Space between button and heading */
   }
 }
 
@@ -248,5 +305,10 @@
 
   .nav a {
     margin: 0 10px;
+  }
+
+  .back-button {
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }

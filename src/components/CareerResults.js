@@ -1,4 +1,3 @@
-// src/components/CareerResults.js
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
@@ -40,6 +39,10 @@ const CareerResults = () => {
     navigate("/roadmap", { state: { career } }); // Navigate to RoadmapPage with career data
   };
 
+  const handleGoBack = () => {
+    navigate("/predict-career"); // Navigate back to PredictCareer.js
+  };
+
   return (
     <div className={`career-results ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <header className="header">
@@ -56,7 +59,12 @@ const CareerResults = () => {
       </header>
 
       <section className="main">
-        <h1>Your Career Recommendations</h1>
+        <div className="back-button-container">
+          <button className="back-button" onClick={handleGoBack}>
+          ←  Back
+          </button>
+        </div>
+        <h1 className="career-recommendation-heading">Your Career Recommendations</h1>
         {isLoading ? (
           <div className="loading-spinner">Loading...</div>
         ) : parsedCareers.length > 0 ? (
@@ -87,8 +95,9 @@ const CareerResults = () => {
           <a href="/about">About</a>
           <a href="/faq">FAQ</a>
           <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/Privacy">Privacy Policy</a>
         </div>
+        <p className="copyright">&copy; 2025 CareerPathAI. All rights reserved.</p>
       </footer>
     </div>
   );

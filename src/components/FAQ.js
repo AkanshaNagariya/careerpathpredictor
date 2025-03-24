@@ -38,24 +38,9 @@ const FAQ = () => {
         "If you're unsure about your skills or interests, CareerPathAI provides suggestions and examples to help you identify them. You can also take online assessments to gain more clarity.",
     },
     {
-      question: "Can I save my results?",
-      answer:
-        "Yes, you can save your results for future reference. Simply create an account (if available) or take a screenshot of your recommendations.",
-    },
-    {
-      question: "How often is the career database updated?",
-      answer:
-        "Our career database is regularly updated to reflect the latest trends and opportunities in the job market. We strive to provide the most relevant and up-to-date information.",
-    },
-    {
       question: "Can I use CareerPathAI on my mobile device?",
       answer:
         "Yes, CareerPathAI is fully responsive and works seamlessly on both desktop and mobile devices.",
-    },
-    {
-      question: "Who can I contact for support?",
-      answer:
-        "If you have any questions or need support, feel free to reach out to us at support@careerpathai.com. We're here to help!",
     },
   ];
 
@@ -109,9 +94,9 @@ const FAQ = () => {
           <a href="/about">About</a>
           <a href="/faq">FAQ</a>
           <a href="/contact">Contact</a>
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/Privacy">Privacy Policy</a>
         </div>
-        <p className="copyright">&copy; 2023 CareerPathAI. All rights reserved.</p>
+        <p className="copyright">&copy; 2025 CareerPathAI. All rights reserved.</p>
       </footer>
     </div>
   );
